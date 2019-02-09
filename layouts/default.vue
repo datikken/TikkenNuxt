@@ -76,7 +76,7 @@ export default {
       items: [
         {
           icon: 'apps',
-          title: 'На главную',
+          title: 'Главная',
           to: '/'
         },
         {

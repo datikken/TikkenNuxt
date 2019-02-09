@@ -13,14 +13,14 @@
               Frontend developer
             </v-card-title>   
             <div class="cardWrap">
-              <div class="wrapItem2">
+              <div class="wrapItem1">
                 <picture>
                   <source media="(min-width: 650px)" srcset="/avatar250px.png">
                   <source media="(min-width: 465px)" srcset="/avatar125.png">
                   <img src="avatar125.png" alt="Tikken" style="width:auto;">
                 </picture>
               </div>
-              <div class="wrapItem1">
+              <div class="wrapItem2">
                 <ul>
                   <li>
                     <p>Шадыбеков Никита</p>
@@ -92,13 +92,10 @@ li {
 .cardsContainer {
   padding-top: 5px;
 }
-@media screen and (max-width: 321) {
-  ul {
-    font-size: 20px;
-  }
-}
 
 .cardWrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
