@@ -88,6 +88,13 @@ export default {
       right: true,
       title: 'Tikken'
     }
+  },
+  head: {
+    script: [
+      {
+        src: '#'
+      }
+    ]
   }
 }
 </script>

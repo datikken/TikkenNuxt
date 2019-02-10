@@ -31,6 +31,27 @@
                   <li>
                     <p>г. Санкт-Петербург</p>
                   </li>
+                  <li>
+                    <a href="https://vk.com/datikken" target="blank">
+                      <img src="/vk.svg" alt="Vk" class="socialIcon">
+                    </a>
+                    <a href="https://www.facebook.com/" target="blank">
+                      <img src="/facebook.svg" class="socialIcon" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/tikkentikken/" target="blank">
+                      <svg class="socialIcon" x="0px" y="0px" viewBox="0 0 202.5 202.5" style="enable-background:new 0 0 202.5 202.5;">
+                        <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9" />
+                        <circle id="lens" class="st0" cx="125.5" cy="78.6" r="2.9" />
+                        <path
+                          id="camera"
+                          class="st0"
+                          d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44
+                C60,69,68.5,60.5,79,60.5z" 
+                        />
+                        <circle id="bigCircle" class="st0" cx="101.2" cy="101.2" r="98.2" />
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -100,5 +121,80 @@ li {
   justify-content: center;
   padding-bottom: 25px;
   flex-wrap: wrap;
+}
+
+.socialIcon {
+  width: 50px;
+  filter: grayscale(100%);
+}
+
+.socialIcon:hover {
+  width: 50px;
+  filter: grayscale(0%);
+}
+
+.st0 {
+  fill: none;
+  stroke: #ef4649;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+#bigCircle {
+  stroke-dasharray: 700;
+  animation: bigCircle 4s linear infinite;
+}
+
+#littleCircle {
+  stroke-dasharray: 150;
+  animation: littleCircle 4s linear infinite;
+}
+
+#camera {
+  stroke-dasharray: 300;
+  animation: camera 4s linear infinite;
+}
+
+#lens {
+  fill: #ef4649;
+  animation: lens 4s linear infinite;
+}
+
+@keyframes bigCircle {
+  0% {
+    stroke-dashoffset: 700;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes camera {
+  0%,
+  25% {
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes littleCircle {
+  0%,
+  50% {
+    stroke-dashoffset: 150;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lens {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
