@@ -141,13 +141,11 @@ export default {
   display: grid;
   color: black;
   text-align: center;
-  margin-top: 20px;
-  float: right;
 }
 
 @media screen and (min-width: 450px) {
   .calculator {
-    width: 400px;
+    max-width: 400px;
   }
 }
 .display {

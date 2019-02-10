@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Bitcoin Price Index</h1>
+    <h1>Парсим bitcoin</h1>
     <div v-for="currency in info" :key="currency.id" class="currency">
       {{ currency.description }}
       <span class="lighten">

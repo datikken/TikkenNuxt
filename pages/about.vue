@@ -1,35 +1,40 @@
 <template>
-  <div>
-    <v-layout>
+  <v-container fluid grid-list-md>
+    <v-layout row wrap d-flex justify-space-around>
+      <v-btn
+        class="floatingButton"
+        color="red"
+        absolute
+        dark
+        fab
+        bottom
+        right
+        @click="ok = !ok"
+      >
+        <img src="/calculator.png">
+      </v-btn>
+      <Api />
       <Calculator v-if="ok" />
     </v-layout>
-    <v-btn
-      class="floatingButton"
-      color="red"
-      absolute
-      dark
-      fab
-      bottom
-      right
-      @click="ok = !ok"
-    >
-      <img src="/calculator.png">
-    </v-btn>
-  </div>
+  </v-container>
 </template>
 
 <script>
 import { TimelineMax } from 'gsap'
 import Splitter from 'split-html-to-chars'
 import Calculator from '~/components/calculator.vue'
-
+import Api from '~/components/api.vue'
+// import Todolist from '~/components/todolist.vue'
 export default {
   components: {
-    Calculator
+    Calculator,
+    Api
+    // Todolist
   },
-  data() {
+  data: () => {
     return {
-      ok: false
+      ok: false,
+      lorem: `Тут я публикую разные поделки.`
     }
   },
   mounted() {
@@ -57,8 +62,12 @@ export default {
 }
 </script>
 
-<style>
+          <style>
 .letter {
   display: inline-block;
+}
+
+.aboutWrap {
+  display: flex;
 }
 </style>

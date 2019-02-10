@@ -35,7 +35,7 @@
                     <a href="https://vk.com/datikken" target="blank">
                       <img src="/vk.svg" alt="Vk" class="socialIcon">
                     </a>
-                    <a href="https://www.facebook.com/" target="blank">
+                    <a href="https://www.facebook.com/tikken.tikken.3" target="blank">
                       <img src="/facebook.svg" class="socialIcon" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/tikkentikken/" target="blank">
